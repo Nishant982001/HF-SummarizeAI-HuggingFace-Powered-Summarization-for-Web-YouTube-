@@ -23,7 +23,7 @@ generic_url=st.text_input("URL",label_visibility="collapsed")
 # ## Gemma Model USsing Groq API
 # llm =ChatGroq(model="Gemma-7b-It", groq_api_key=groq_api_key)
 repo_id = "google/gemma-3-27b-it"
-llm=HuggingFaceEndpoint(repo_id=repo_id,max_length=150, temperature=0.7, token=hf_api_key)
+llm=HuggingFaceEndpoint(repo_id=repo_id, max_length=150, temperature=0.7, token=hf_api_key)
 
 prompt_template="""
 Provide a summary of the following content in 300 words:
